@@ -1,0 +1,70 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    padding: auto;
+    background: rgb(255, 132, 100);
+    background: linear-gradient(
+        90deg,
+        rgba(23, 209, 175, 0.849)0%,
+        rgba(6, 234, 25, 0.509)100%
+    );
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.cardbody{
+    background: white;
+    padding: 50px;
+    border-radius: 10%;
+    text-align: center;
+}
+.cardbody h1{
+    margin-bottom: 15%;
+    font-size: 100px;
+}
+button{
+    border-radius: 5px;
+    color: rgb(16, 16, 17);
+    padding: 100%,100%; 
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid;
+    margin: 0, 1px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 90px;
+    height: 30px;
+}
+button#decrement{
+    background: rgba(127, 255, 212, 0.587);
+}
+button#decrement:hover{
+    background: rgb(9, 228, 155);
+    color: white;
+}
+
+button#reset{
+    background: rgba(12, 213, 240, 0.763);
+}
+button#reset:hover{
+    background: rgba(25, 178, 198, 0.941);
+    color: white;
+}
+
+button#increment{
+    background: rgba(245, 230, 9, 0.763);
+}
+button#increment:hover{
+    background: rgba(145, 173, 32, 0.941);
+    color: white;
+}
